@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    margin: 50px;
+    max-width: 1000px;
+    max-height: 100%;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1)
+}
+.container .left-side{
+    position: relative;
+    background: #aad0d0;
+    padding: 40px;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000;  
+}
+.profile .imgp img{
+    border-radius: 100px;
+}
+
+
+.profile h2{
+    margin-top: 20px;
+    font-size: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.profile h2 span{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+.title{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.contact ul li{
+    list-style-type: none;
+    position: relative;
+    font-size: 13;
+    margin: 10px 0px;
+    cursor: pointer;
+    font-weight: 300;
+}
+.contact ul li .icon{
+    display: inline-block;
+    color: #03a9f4;
+}
+.contactinfo .education li{
+    margin-bottom: 15px;
+    
+}
+.education h5{
+    color: darkblue;
+    font-weight: 500;
+}
+.education h4:nth-child(2){
+    font-weight: 500;
+}
+.education h4{
+    font-weight: 300;
+}
+.language .percent{
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+    height: 6px;
+    display: block;
+    background-color: #03a9f4;
+}
+.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: darkblue;
+}
+
+
+
+.container .right-side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about .box{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.year-name{
+    flex-basis: 30%;
+    margin: 10px;
+    color: dimgray;
+}
+.text{
+    flex-basis: 50%;
+    margin: 10px;
+    font-size: 15px;
+}
+.text h4{
+    color: cadetblue;
+}
+.about .title2{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: darkblue;
+}
+
+.right-side .about h4{
+    font-weight: 600;
+}
+.right-side .about h4:nth-of-type(2){
+    margin-top: 20px;
+}
+    
+
+.right-side .about h5{
+    font-weight: 500;
+}
+.right-side .about p{
+    font-weight: 300;
+}
+
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: aqua;
+}
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: darkblue;
+    height: 100%;
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+}
+.interest ul i{
+    color: aqua;
+}
+
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+    }
+    .interest ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
